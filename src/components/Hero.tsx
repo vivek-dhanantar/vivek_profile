@@ -24,9 +24,15 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-wrap gap-4 pt-4">
-              <Button size="lg" className="bg-gradient-primary hover:opacity-90 transition-all">
-                <Mail className="mr-2 h-5 w-5" />
-                Contact Me
+              <Button 
+                size="lg" 
+                className="bg-gradient-primary hover:opacity-90 transition-all"
+                asChild
+              >
+                <a href="#contact">
+                  <Mail className="mr-2 h-5 w-5" />
+                  Contact Me
+                </a>
               </Button>
               <Button size="lg" variant="outline" className="hover:bg-muted transition-all" asChild>
                 <a href="/Vivek_Kurmi_CV.pdf" download="Vivek_Kurmi_CV.pdf">
